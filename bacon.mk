@@ -20,6 +20,9 @@ $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 # Inherit our OneplusShit
 $(call inherit-product, device/oneplus/OneplusShit/opshit.mk)
 
+# Inherit from msm8974-common
+$(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
