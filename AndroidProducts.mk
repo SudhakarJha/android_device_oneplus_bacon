@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_bacon.mk
+    $(LOCAL_DIR)/aosp_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
     xtended_bacon-user \
