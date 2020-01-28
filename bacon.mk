@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Call the proprietary setup
+$(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
+
+# Inherit our OneplusShit
+$(call inherit-product, device/oneplus/OneplusShit/opshit.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -321,8 +327,6 @@ PRODUCT_PACKAGES += qti-telephony-common
 PRODUCT_PACKAGES += \
 	librecovery_updater_oppo
 
-# Call the proprietary setup
-$(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
-
-# Inherit our OneplusShit
-$(call inherit-product, device/oneplus/OneplusShit/opshit.mk)
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
