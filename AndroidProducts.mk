@@ -17,6 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_bacon-user \
-    xtended_bacon-userdebug \
-    xtended_bacon-eng
+    aosp_bacon-user \
+    aosp_bacon-userdebug \
+    aosp_bacon-eng
