@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Inherit some common Xtended stuff.
-#$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
